@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  apache:
+    image: php:8.1-apache
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html
+    environment:
+      XDEBUG_CONFIG: "remote_host=localhost remote_connect_back=1"
+      PHP_IDE_CONFIG: "serverName=Docker"
+

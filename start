@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+docker-compose up -d && \
+echo "
+===================== 🚀 Done 🚀 ===================
+      
+      Access your new links:
+      🌎  Web server: http://localhost/
+
+===================== 🚀 Done 🚀 ==================="
